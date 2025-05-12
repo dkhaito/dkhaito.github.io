@@ -2,12 +2,42 @@
 <html>
 <head>
     <style>
-        body {background-color:gainsboro; max-width: 800px; }    
+        body {background-color:gainsboro;}  
+        .nav-bar {
+      display: flex;
+      gap: 20px;
+      background-color: #f8f8f8;
+      padding: 10px 20px;
+      justify-content: center;
+      border-bottom: 1px solid #ddd;
+    }
+    .nav-bar a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      padding: 5px 10px;
+      transition: color 0.2s;
+    }
+    .nav-bar a:hover {
+      color: #007BFF;
+    }  
+    .base {
+  max-width: 800px;
+}
+
     </style>
     <title> Daniil Khaitovich's homepage </title>   
 </head>
 <body>
+    <div class="nav-bar">
+        <a href="/index.html">Home</a>
+        <a href="/cv.html"> CV</a>
+        <a href="/research.html">Research</a>
+        <a href="/misc.html">Random Stuff</a>
+        <a href="/contact.html">Contact</a>
+      </div>
 <h1>Daniil Khaitovich (he/him)</h1>
+<div class="base">
 <figure>
 <img src="me.png"
 alt="self-portrait"
@@ -15,18 +45,22 @@ width="300"
 height="300">
 <figcaption><i>(I do my best to see to it that no photos of me are available online, but here's my self-portrait. I drew it in Paint with my left hand)</i> </figcaption>
 </figure>
+</div>
 <h2> About me </h2>
-<p> I am a PhD candidate at  <a href="https://www.illc.uva.nl/" >Institute for Logic, Language and Computation</a> of the University of Amsterdam, the Netherlands.
-I am  mostly interested in modal logics for multi-agent systems, but I also take side-quests in the neighbouring fields of formal epistemology and deontic logic.
+<div class="base"> I am a PhD candidate at  <a href="https://www.illc.uva.nl/" >Institute for Logic, Language and Computation</a> of the University of Amsterdam, the Netherlands.
+I am  mostly interested in modal logics for multi-agent systems, but I also take side-quests in the neighbouring fields of formal epistemology and deontic logic.</div>
 <br>
-Before starting at Amsterdam, I completed my masters at Higher School of Economics in Moscow, where I cut my teeth on formal methods in philosophy. At that time I have also worked as a reserch assitant at  <a href="https://llfp.hse.ru/en/">International Laboratory for Logic, Linguistics and Formal Philosophy</a>. I was forced to leave Russia after a politically motivated arrest.
+<div class="base">Before starting at Amsterdam, I completed my masters at Higher School of Economics in Moscow, where I cut my teeth on formal methods in philosophy. At that time I have also worked as a reserch assitant at  <a href="https://llfp.hse.ru/en/">International Laboratory for Logic, Linguistics and Formal Philosophy</a>. I was forced to leave Russia after a politically motivated arrest.
+</div>
 <br>
-<p>
+<div class="base">
 Beyond my academic work, I love to learn languages (you can communicate with me in English, Dutch, Belarusian, Russian and Ukrainian or try Georgian, Yiddish or Hebrew to have fun of my yet low proficiency in them). Once in a while I collaborate with Amsterdam-based performance duo <a href="https://wolfenpaul.github.io/">Wolf en Paul</a>. You can also regularly find me at <a href="https://vegantaalcafe.nl/info/"> Vegan Taalcafé</a>. Before being forced to leave Belarus, I have volunteered for preserving the memorial in <a href="https://en.wikipedia.org/wiki/Kurapaty">Kurapaty</a> and done some volunteering for <a href="https://www.esjf-cemeteries.org/"> The European Jewish
     Cemeteries Initiative </a>. Therefore, in my spare time I preserve graves.
-</p>
+</div>
 <br>
 <h2>Contact me</h2>
+<div class="base">
 Contact me at d.khaitovich(at)uva(dot)nl
+</div>
 </body>
 </html>
