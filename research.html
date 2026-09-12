@@ -1,34 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Research</title>
-</head> 
-    <style>
-        body {background-color:rgb(255, 255, 255);
-             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;}  
-        .nav-bar {
-      display: flex;
-      gap: 20px;
-      background-color: #f8f8f8;
-      padding: 10px 20px;
-      justify-content: center;
-      border-bottom: 1px solid #ddd;
-    }
-    .nav-bar a {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-      padding: 5px 10px;
-      transition: color 0.2s;
-    }
-    .nav-bar a:hover {
-      color: #007BFF;
-    }  
-    .base {
-  max-width: 800px;
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+        body {
+    background-color: rgb(255, 255, 255);
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #222;
+    margin: 0;
 }
 
+h1, h2 {
+   font-family: "Libre Baskerville", serif;
+}
+
+h1 {
+    margin-bottom: 0.2em;
+}
+
+h2 {
+    margin-top: 1.5em;
+    margin-bottom: 0.4em;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 20px;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    justify-content: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.2s;
+}
+
+.nav-bar a:hover {
+    color: #007BFF;
+}
+
+main {
+    max-width: 800px;
+    margin-left: 12%;
+    margin-right: auto;
+    padding-top: 30px;
+}
+
+@media (max-width: 600px) {
+            main {
+                margin-left: 0;
+                padding: 20px;
+            }
+        }
     </style>
+</head>
+<title>Research</title>
 <body>
 <div class="nav-bar">
         <a href="/index.html">Home</a>
@@ -37,14 +72,15 @@
         <a href="/misc.html">Random Stuff</a>
         <a href="/contact.html">Contact</a>
       </div>
+  <main>
   <h1>
-    Research news
+    Research
   </h1>
-  <div class="base"> Here you can find the list of my papers, conference proceedings, etc. If something is not published yet and you want to have a look at the preprint, just write me a mail.
-  <h2> Journal papers under review </h2>
+  <div> Here you can find the list of my papers, conference proceedings, etc. If something is not published yet and you want to have a look at the preprint, just write me a mail.
+  <h2> Journal papers </h2>
     <ul>
-      <li> Daniil Khaitovich.<a href="logic_of_conditional_intention.pdf" target="_blank"> Logic of Conditional Intention.</a><i>Studia Logica</i></li>
-      <li> Daniil Khaitovich.<a href="pSTIT.pdf" target="blank"> Plan-restricted Group STIT Logic.</a> <i>Journal of Applied Non-Classical Logics</i></li>
+      <li> Daniil Khaitovich.<a href="logic_of_conditional_intention.pdf" target="_blank"> Logic of Conditional Intention.</a>To appear in <i>Studia Logica</i></li>
+      <li> Daniil Khaitovich.<a href="pSTIT.pdf" target="blank"> Plan-restricted Group STIT Logic.</a> Under review.</li>
     </ul>
   <h2> Peer-reviewed conference proceeding </h2>
   <ul>
@@ -52,5 +88,6 @@
     <li> Daniil Khaitovich, Lorenz Hornung. <a href="https://www.collegepublications.co.uk/DEON/?00005">Modal Logic for Agent-based Legal Classifications.</a> <i>Deontic Logic and Normative Systems: 17th International Conference, DEON 2025</i></li>
   </ul>
   </div>
+  </main>
 </body>
 </html>
